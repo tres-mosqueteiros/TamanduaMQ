@@ -13,7 +13,7 @@ services:
       - postgres-data:/var/lib/postgresql/data
 
   rabbitmq:
-    image: rabbitmq:management
+    image: rabbitmq:4.1.0-management-alpine
     container_name: rabbitmq_example
     ports:
       - 5672:5672
